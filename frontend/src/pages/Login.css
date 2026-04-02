@@ -1,0 +1,146 @@
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: var(--bg-dark);
+}
+
+.login-card {
+  width: 100%;
+  max-width: 420px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 2.5rem 2rem;
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.brand-logo {
+  width: 44px;
+  height: 44px;
+  margin: 0 auto 1rem;
+  background: var(--primary);
+  border-radius: 8px;
+}
+
+.login-header h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.25rem;
+}
+
+.login-header p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.error-message {
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  color: #fca5a5;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  margin-bottom: 1.25rem;
+  font-size: 0.9rem;
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #cbd5e1;
+  margin-bottom: 0.4rem;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.75rem 0.875rem;
+  background: #0f172a;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: #fff;
+  font-size: 0.95rem;
+  font-family: inherit;
+}
+
+.form-control::placeholder {
+  color: #64748b;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.custom-select-wrapper {
+  position: relative;
+}
+
+.select-control {
+  appearance: none;
+  cursor: pointer;
+  color-scheme: dark;
+}
+
+.select-control option {
+  background: var(--bg-card);
+  color: #fff;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1.25rem;
+}
+
+.forgot-password {
+  color: var(--primary);
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.login-button {
+  width: 100%;
+  padding: 0.8rem;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.login-button:hover:not(:disabled) {
+  background: #4f46e5;
+}
+
+.login-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.invalid-field {
+  border-color: rgba(239, 68, 68, 0.5) !important;
+}
+
+@media (max-width: 480px) {
+  .login-card {
+    padding: 2rem 1.25rem;
+  }
+}

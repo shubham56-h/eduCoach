@@ -1,0 +1,45 @@
+:root {
+  --primary: #6366f1;
+  --bg-dark: #0f172a;
+  --bg-card: #1e293b;
+  --text-main: #f1f5f9;
+  --text-muted: #94a3b8;
+  --success: #10b981;
+  --error: #ef4444;
+  --border: #334155;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  line-height: 1.5;
+}
+
+.pulse {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: currentColor;
+  display: inline-block;
+}
+
+.shake {
+  animation: shake 0.4s ease both;
+}
+
+@keyframes shake {
+  20%, 80% { transform: translateX(-3px); }
+  40%, 60% { transform: translateX(3px); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

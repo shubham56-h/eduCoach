@@ -1,0 +1,109 @@
+.faculty-layout {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: var(--bg-dark);
+}
+
+.faculty-sidebar {
+  width: 240px;
+  background-color: #1e293b;
+  border-right: 1px solid #334155;
+  display: flex;
+  flex-direction: column;
+}
+
+.faculty-sidebar .sidebar-header {
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid #334155;
+}
+
+.faculty-sidebar .sidebar-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.faculty-sidebar .sidebar-logo h2 {
+  font-size: 1rem;
+  color: #fff;
+  margin: 0;
+  font-weight: 600;
+}
+
+.faculty-sidebar .sidebar-nav {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.faculty-sidebar .nav-group-title {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #64748b;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.faculty-sidebar .nav-item {
+  display: flex;
+  align-items: center;
+  padding: 0.7rem 0.875rem;
+  color: #94a3b8;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.faculty-sidebar .nav-item:hover {
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
+
+.faculty-sidebar .nav-item.active {
+  background-color: #2563eb;
+  color: #fff;
+}
+
+.faculty-sidebar .sidebar-footer {
+  padding: 0.75rem 1rem 1.75rem;
+  border-top: 1px solid #334155;
+}
+
+.faculty-sidebar .logout-btn {
+  width: 100%;
+  padding: 0.7rem 0.875rem;
+  background: transparent;
+  color: #f87171;
+  border: 1px solid rgba(248, 113, 113, 0.3);
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+.faculty-sidebar .logout-btn:hover {
+  background-color: rgba(239, 68, 68, 0.08);
+}
+
+.faculty-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: var(--bg-dark);
+}
+
+.content-scrollable {
+  flex: 1;
+  overflow-y: auto;
+  padding: 2rem;
+}
